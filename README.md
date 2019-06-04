@@ -18,5 +18,7 @@
 	- Abrir os dois projetos no NetBeans;
 	- Clicar com o botão direito em cima do projeto 'br.com.controletarefas' no NetBeans e escolher a opção 'Implantar';
 	- Rodar o projeto 'prjConsumirWebService'.
+- Obs.:
+	- Tive que zipar os projetos pois o github não aceita mais que 100 arquivos.
 
 
