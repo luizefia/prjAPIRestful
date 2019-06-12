@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<application xmlns="http://wadl.dev.java.net/2009/02">
+    <doc xmlns:jersey="http://jersey.java.net/" jersey:generatedBy="Jersey: 2.21 2015-08-14 21:41:51"/>
+    <doc xmlns:jersey="http://jersey.java.net/" jersey:hint="This is simplified WADL with user and core resources only. To get full WADL with extended resources use the query parameter detail. Link: http://localhost:8080/br.com.controletarefas/webresources/application.wadl?detail=true"/>
+    <grammars/>
+    <resources base="http://localhost:8080/br.com.controletarefas/webresources/">
+        <resource path="/tarefa">
+            <resource path="delete/{codigo}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="codigo" style="template" type="xs:int"/>
+                <method id="delete" name="DELETE">
+                    <response>
+                        <representation mediaType="*/*"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="lista">
+                <method id="getTarefa" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="get/{codigoUsuario}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="codigo" style="template" type="xs:int"/>
+                <method id="getListaUsuario" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="put">
+                <method id="putUsuario" name="PUT">
+                    <request>
+                        <representation mediaType="application/json"/>
+                    </request>
+                </method>
+            </resource>
+            <resource path="post">
+                <method id="postUsuario" name="POST">
+                    <request>
+                        <representation mediaType="application/json"/>
+                    </request>
+                </method>
+            </resource>
+        </resource>
+        <resource path="usuario">
+            <resource path="lista">
+                <method id="getUsuarioLista" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                        <representation mediaType="application/xml"/>
+                    </response>
+                </method>
+            </resource>
+            <resource path="get/{codigo}">
+                <param xmlns:xs="http://www.w3.org/2001/XMLSchema" name="codigo" style="template" type="xs:int"/>
+                <method id="getsuario" name="GET">
+                    <response>
+                        <representation mediaType="application/json"/>
+                    </response>
+                </method>
+            </resource>
+        </resource>
+    </resources>
+</application>
