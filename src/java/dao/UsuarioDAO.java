@@ -31,6 +31,7 @@ public class UsuarioDAO {
             pst.setString(2, usuario.getCargo());
             pst.setString(3, usuario.getEndereco());
             pst.setString(4, usuario.getHorarioTrabalho());
+            pst.execute();
 
         } catch (SQLException ex) {
             Logger.getLogger(UsuarioDAO.class.getName()).log(Level.SEVERE, null, ex);
